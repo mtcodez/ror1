@@ -21,20 +21,20 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
-development:
-  adapter: postgresql
-  encoding: unicode
-  database: ror-01-devel
-  host: localhost
-  pool: 5
-  username: mtester-01
-  password: test01
+# development:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: ror-01-devel
+#   host: localhost
+#   pool: 5
+#   username: mtester-01
+#   password: test01
 
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: ror-01-devel
-  host: localhost
-  pool: 5
-  username: mtester-01
-  password: test01
+# test:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: ror-01-devel
+#   host: localhost
+#   pool: 5
+#   username: mtester-01
+#   password: test01
