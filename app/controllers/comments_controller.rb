@@ -6,6 +6,10 @@ class CommentsController < ApplicationController
 			redirect_to @post, notice: "Comment created."
 		end
 	end
+
+	def edit
+	end
+	
 	private
 
     def comment_params
