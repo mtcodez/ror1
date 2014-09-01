@@ -20,6 +20,11 @@ class PostsController < ApplicationController
 		@comment = Comment.new
 	end
 
+	def edit
+		@post = Post.find(params[:id])
+		
+	end
+
 	private
 
     def post_params
