@@ -13,8 +13,13 @@
         <a class="blog-nav-item active" href="/">Home</a>
         <a class="blog-nav-item" href="/posts">Archives</a>
         <a class="blog-nav-item" href="#">Press</a>
-        <a class="blog-nav-item" href="login">Log In</a>
         <a class="blog-nav-item" href="#">About</a>
+        <% if session[:user_id] == nil %>
+        <a class="blog-nav-item pull-right" href="login">Log In</a>
+        <% else %>
+        <a class="blog-nav-item pull-right" href="#">Edit</a>
+        <a class="blog-nav-item pull-right" href="logout">Log Out</a>
+        <% end %>
       </nav>
     </div>
   </div>
